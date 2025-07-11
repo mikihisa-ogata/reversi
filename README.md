@@ -1,17 +1,14 @@
-# Othello App
+# オセロアプリ
 
-This is a simple Othello (Reversi) game built with Vue.js. The application allows users to play the classic board game against each other.
+このプロジェクトは、Vue.js を使用して構築されたシンプルなオセロゲームです。プレイヤー同士でオセロを楽しむことができます。
 
-## Project Structure
+## プロジェクト構成
 
-The project consists of the following files:
-
-- `src/components/Board.vue`: A Vue component that renders the Othello board, manages the game state, and handles user input.
-- `src/App.vue`: The root component of the application that includes the `Board` component and defines the overall layout and styles.
-- `src/main.js`: The entry point of the application where the Vue instance is created and the `App` component is mounted.
-- `public/index.html`: The HTML template for the application, containing the `<div id="app"></div>` where the Vue application will be mounted.
-- `package.json`: The npm configuration file that lists the project's dependencies and scripts.
-- `vue.config.js`: The Vue CLI configuration file for build and development server settings.
+- `src/components/Board.vue`: オセロの盤面を描画し、ゲームの状態を管理する Vue コンポーネント。
+- `src/App.vue`: アプリケーションのルートコンポーネントで、`Board` コンポーネントを含みます。
+- `src/main.js`: アプリケーションのエントリーポイントで、Vue インスタンスを作成し、`App` コンポーネントをマウントします。
+- `public/index.html`: アプリケーションの HTML テンプレートで、Vue アプリケーションがマウントされる `<div id="app"></div>` を含みます。
+- `package.json`: プロジェクトの依存関係とスクリプトを定義する npm 設定ファイル。
 
 ## Setup Instructions
 

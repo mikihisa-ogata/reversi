@@ -39,13 +39,12 @@ export default {
       }
     },
     isValidMove(rowIndex, colIndex) {
-      // Implement the logic to check if the move is valid
-      return this.board[rowIndex][colIndex] === null; // Example validation
+      return this.board[rowIndex][colIndex] === null;
     },
     flipPieces(rowIndex, colIndex) {
       const directions = [
-        [-1, 0], [1, 0], [0, -1], [0, 1], // Vertical and horizontal
-        [-1, -1], [-1, 1], [1, -1], [1, 1], // Diagonal
+        [-1, 0], [1, 0], [0, -1], [0, 1], 
+        [-1, -1], [-1, 1], [1, -1], [1, 1],
       ];
       directions.forEach(([dx, dy]) => {
         const piecesToFlip = [];
@@ -87,12 +86,22 @@ export default {
   align-items: center;
   justify-content: center;
   border: 1px solid #000;
+  background-color: green;
   cursor: pointer;
+  position: relative;
 }
-.board-cell.black {
+.board-cell.black::before,
+.board-cell.white::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.board-cell.black::before {
   background-color: black;
 }
-.board-cell.white {
+.board-cell.white::before {
   background-color: white;
 }
 </style>
